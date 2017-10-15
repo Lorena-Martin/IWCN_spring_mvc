@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Lista de productos</title>
+	<link href="../../css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+	<center>
+    	<h1 th:text="'Lista de Productos: '"></h1>
+    </center>
+    <ul th:each="p, it : ${lista}">
+		<li><a th:href="@{/info/{optionId}(optionId=${it.index})}" th:text="'Producto ' + ${it.index+1} + ': ' + ${p.nombre}"></a> <a th:href="@{/eliminado/{optionId}(optionId=${it.index})}" th:text="' [Eliminar]'"></a></li>		
+	</ul>
+   	<input type="button" value="Atrás" onclick="location.href='/'"/>
+</body>
+</html>
