@@ -5,15 +5,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Producto {
 
-	private String codigo;
+	private int codigo;
 	private String nombre;
 	private String descripcion;
 	private String precio;
 
-	public String getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(String codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombre() {
