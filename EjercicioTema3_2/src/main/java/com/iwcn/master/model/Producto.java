@@ -8,7 +8,7 @@ public class Producto {
 	private int codigo;
 	private String nombre;
 	private String descripcion;
-	private String precio;
+	private int precio;
 
 	public int getCodigo() {
 		return codigo;
@@ -28,10 +28,10 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public String getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
-	public void setPrecio(String precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
 	
